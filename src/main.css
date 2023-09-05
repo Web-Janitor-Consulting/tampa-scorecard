@@ -12,7 +12,70 @@ html, body {
     padding: 0;
 }
 
-.line-graph {
-    width: 50vw;
+.site {
+    padding: 1rem;
+    max-width: 90vw;
+    margin: 0 auto;
 }
 
+.hero {
+    min-height: 33vh;
+}
+
+.hero h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.hero p {
+    margin-inline: auto;
+    width: clamp(16rem,93vw,75rem);
+    max-width: 75ch;
+    line-height: 1.5;
+    font-size: 1.25rem;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+#intro p {
+    margin-inline: auto;
+    width: clamp(16rem,93vw,75rem);
+    max-width: 75ch;
+    line-height: 1.5;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#intro ul {
+    list-style: none;
+    margin-inline: auto;
+    width: clamp(16rem,93vw,75rem);
+    max-width: 75ch;
+    line-height: 1.5;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+blockquote {
+    margin: 0;
+    padding: .5rem 0;
+    font-size: 1.25rem;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 1.5;
+    border-top: 1px solid var(--primary);
+    border-bottom: 1px solid var(--primary);
+    text-align: center;
+}
+blockquote p {
+    font-size: 2rem;
+}
+
+
+section {
+    margin: 2rem 0;
+    border-top: 5px solid var(--primary);
+}
