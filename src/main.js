@@ -1,27 +1,34 @@
 fetch('pci.json')
     .then(response => response.json())
     .then(data => {
-        const cpiTPA = data;
-        console.log(cpiTPA);
+        const datasets = [];
+
+        for (let i = 0; i < data.length; i++) {
+            const cityData = data[i].data;
+            const cityName = data[i].city;
+
+            datasets.push({
+                label: cityName,
+                data: cityData.map(row => row.amount),
+                borderWidth: 1
+            });
+        }
 
         const ctx = document.getElementById('pci');
 
         new Chart(ctx, {
             type: 'line',
             data: {
-                labels: cpiTPA.map(row => row.year),
-                datasets: [{
-                    label: 'Tampa',
-                    data: cpiTPA.map(row => row.amount),
-                    borderWidth: 1
-                }]
+                labels: data[0].data.map(row => row.year),
+                datasets: datasets
             },
             options: {
                 scales: {
-                    y: {
-                        min: 15000,
-                        max: 50000,
-                    }
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
                 }
             }
         });
