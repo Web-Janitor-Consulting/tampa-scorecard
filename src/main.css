@@ -39,6 +39,12 @@ body {font-family: system-ui, sans-serif;}
     font-size: 1.25rem;
 }
 
+.quiet {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 1rem;
+}
+
 h2 {
     text-align: center;
     font-size: 2rem;
@@ -85,8 +91,9 @@ section {
 
 .wrapper {
     display: flex;
-    height: 50vh;
+    min-height: 50vh;
     width: 100%;
+    padding: 1rem 0;
 }
 
 .wrapper > * { 
@@ -99,7 +106,7 @@ section {
     align-self: center;
  }
 
- .graphs {
+ .graph {
     width: 100%;
  }
 
