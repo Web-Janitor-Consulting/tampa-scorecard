@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tampa Scorecard 2023</title>
+    <link rel="stylesheet" href="/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Tampa Scorecard</h1>
+    </header>
+    <main>
+        <p>Tampa Scorecard is a service of Tampa City Council Member Bill Carlson. Its purpose is to provide an objective set of measures to guide policy decisions in Tampa and the region. To give feedback or suggestions, please
+            <a href="mailto:bill.carlson@tampagov.net">email Council Member Carlson</a>.
+        </p>
+        <p class="credits">
+            Special thanks to Moez Limayem, Dean of the USF Muma College of Business, and his team for their guidance and insights in setting the framework and compiling the data. Thanks also to USF graduate student Alexander Frei for his hard work in putting together
+            the spreadsheets, charts and presentation.
+        </p>
+        <section id="intro">
+            <blockquote>
+                <p>What gets measured gets done.</p>
+                <footer>Rheticus</footer>
+            </blockquote>
+            <h2>Methodology</h2>
+            <ul>
+                <li><a href="#per-capita-income">Per Capita Income</a></li>
+                <li><a href="#median-income">Median Household Income</a></li>
+                <li><a href="#poverty-rate">Poverty Rate</a></li>
+                <li><a href="#unemployment-rate">Unemployment Rate</a></li>
+                <li><a href="#home-ownership">Home Ownership</a></li>
+                <li><a href="#violent-crime-rate">Violent Crime Rate</a></li>
+                <li><a href="#education">Educational Attainment</a></li>
+            </ul>
+        </section>
+        <section id="per-capita-income">
+            <div class="line-graph">
+                <canvas id="pci"></canvas>
+            </div>
+        </section>
+</body>
+
+</html>

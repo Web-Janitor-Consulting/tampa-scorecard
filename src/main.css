@@ -1,0 +1,18 @@
+:root {
+    --primary: #000000;
+    --secondary: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    marign: 0;
+    padding: 0;
+}
+
+.line-graph {
+    width: 50vw;
+}
+
