@@ -73,9 +73,37 @@ blockquote {
 blockquote p {
     font-size: 2rem;
 }
-
-
 section {
     margin: 2rem 0;
     border-top: 5px solid var(--primary);
 }
+
+.wrapper {
+    display: flex;
+    height: 50vh;
+    width: 100%;
+}
+
+.wrapper > * { 
+    flex: 0 1 auto;
+ }
+
+ .context {
+    width: 450px;
+    font-size: 1.4rem;
+    align-self: center;
+ }
+
+ .graphs {
+    width: 100%;
+ }
+
+@media screen and (max-width: 768px) {
+    .context {
+        width: 100%;
+    }
+    .wrapper {
+        flex-direction: column;
+    }
+}
+
