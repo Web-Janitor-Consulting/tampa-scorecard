@@ -1,0 +1,177 @@
+[{
+        "city": "Tampa",
+        "data": [{
+                "year": 2012,
+                "amount": 29000
+            },
+            {
+                "year": 2013,
+                "amount": 29500
+            },
+            {
+                "year": 2014,
+                "amount": 30000
+            },
+            {
+                "year": 2015,
+                "amount": 31000
+            },
+            {
+                "year": 2016,
+                "amount": 32000
+            },
+            {
+                "year": 2017,
+                "amount": 34000
+            },
+            {
+                "year": 2018,
+                "amount": 36000
+            },
+            {
+                "year": 2019,
+                "amount": 38000
+            },
+            {
+                "year": 2020,
+                "amount": 39000
+            },
+            {
+                "year": 2021,
+                "amount": 40962
+            }
+        ]
+    },
+    {
+        "city": "Austin",
+        "data": [{
+                "year": 2012,
+                "amount": 31550
+            },
+            {
+                "year": 2013,
+                "amount": 32000
+            },
+            {
+                "year": 2014,
+                "amount": 33000
+            },
+            {
+                "year": 2015,
+                "amount": 34100
+            },
+            {
+                "year": 2016,
+                "amount": 36000
+            },
+            {
+                "year": 2017,
+                "amount": 37500
+            },
+            {
+                "year": 2018,
+                "amount": 40000
+            },
+            {
+                "year": 2019,
+                "amount": 43500
+            },
+            {
+                "year": 2020,
+                "amount": 45000
+            },
+            {
+                "year": 2021,
+                "amount": 48550
+            }
+        ]
+    },
+    {
+        "city": "Charlotte",
+        "data": [{
+                "year": 2012,
+                "amount": 32000
+            },
+            {
+                "year": 2013,
+                "amount": 32200
+            },
+            {
+                "year": 2014,
+                "amount": 33700
+            },
+            {
+                "year": 2015,
+                "amount": 33500
+            },
+            {
+                "year": 2016,
+                "amount": 34000
+            },
+            {
+                "year": 2017,
+                "amount": 35500
+            },
+            {
+                "year": 2018,
+                "amount": 36500
+            },
+            {
+                "year": 2019,
+                "amount": 37500
+            },
+            {
+                "year": 2020,
+                "amount": 40000
+            },
+            {
+                "year": 2021,
+                "amount": 43080
+            }
+        ]
+    },
+    {
+        "city": "Atlanta",
+        "data": [{
+                "year": 2012,
+                "amount": 36000
+            },
+            {
+                "year": 2013,
+                "amount": 36500
+            },
+            {
+                "year": 2014,
+                "amount": 35500
+            },
+            {
+                "year": 2015,
+                "amount": 36000
+            },
+            {
+                "year": 2016,
+                "amount": 39000
+            },
+            {
+                "year": 2017,
+                "amount": 41000
+            },
+            {
+                "year": 2018,
+                "amount": 44000
+            },
+            {
+                "year": 2019,
+                "amount": 47500
+            },
+            {
+                "year": 2020,
+                "amount": 50000
+            },
+            {
+                "year": 2021,
+                "amount": 54446
+            }
+        ]
+    }
+]

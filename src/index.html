@@ -7,10 +7,17 @@
     <title>Tampa Scorecard 2023</title>
     <link rel="stylesheet" href="/main.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-deferred@2"></script>
     <script src="/main.js" defer></script>
 </head>
 
 <body>
+    <div class="banner">
+        <p>NOTE: Any data in the graphs are approximated based on the slides in the original document. I am working on obtaining the original data and will update the graphs as soon as I have it. If you have the data or would like to help, opening an issue
+            on the <a href="https://github.com/Web-Janitor-Consulting/tampa-scorecard/issues">GitHub repo</a> would be greatly appreciated.
+        </p>
+
+    </div>
     <div class="site">
         <div class="hero">
             <h1>Tampa Scorecard</h1>
@@ -46,18 +53,36 @@
         </section>
         <section id="per-capita-income">
             <h2>Per Capita Income</h2>
+            <p class="quiet">
+                Per capita income is a measure of the amount of money earned per person in a given area. It is calculated by dividing the area's total income by its total population.
+            </p>
             <div class="wrapper">
                 <div class="context">
                     <p>Per Capita Income: Florida Cities Tampa has the third higehst per capita income of all major Florida cities.
                     </p>
 
                 </div>
-                <div class="graphs">
+                <div class="graph">
                     <canvas id="pci"></canvas>
-                    <p>
-                        Per capita income is a measure of the amount of money earned per person in a given area. It is calculated by dividing the area's total income by its total population.
-                    </p>
                 </div>
+            </div>
+            <div class="wrapper">
+                <div class="context">
+                    <p>Tampa lags behind its benchmark cities.</p>
+                </div>
+                <div class="graph">
+                    <canvas id="pci-benchmark"></canvas>
+                </div>
+
+            </div>
+            <div class="wrapper">
+                <div class="context">
+                    <p>Tampa's high-income earners skew the average.</p>
+                </div>
+                <div class="graph">
+                    <canvas id="high-earners"></canvas>
+                </div>
+
             </div>
         </section>
     </div>
