@@ -46,39 +46,39 @@
         "city": "Austin",
         "data": [{
                 "year": 2012,
-                "amount": 31550
+                "amount": 31387
             },
             {
                 "year": 2013,
-                "amount": 32000
+                "amount": 31990
             },
             {
                 "year": 2014,
-                "amount": 33000
+                "amount": 32672
             },
             {
                 "year": 2015,
-                "amount": 34100
+                "amount": 34015
             },
             {
                 "year": 2016,
-                "amount": 36000
+                "amount": 35672
             },
             {
                 "year": 2017,
-                "amount": 37500
+                "amount": 37888
             },
             {
                 "year": 2018,
-                "amount": 40000
+                "amount": 40391
             },
             {
                 "year": 2019,
-                "amount": 43500
+                "amount": 43043
             },
             {
                 "year": 2020,
-                "amount": 45000
+                "amount": 44829
             },
             {
                 "year": 2021,
@@ -90,39 +90,39 @@
         "city": "Charlotte",
         "data": [{
                 "year": 2012,
-                "amount": 32000
+                "amount": 31653
             },
             {
                 "year": 2013,
-                "amount": 32200
+                "amount": 31556
             },
             {
                 "year": 2014,
-                "amount": 33700
+                "amount": 31844
             },
             {
                 "year": 2015,
-                "amount": 33500
+                "amount": 32254
             },
             {
                 "year": 2016,
-                "amount": 34000
+                "amount": 33050
             },
             {
                 "year": 2017,
-                "amount": 35500
+                "amount": 34687
             },
             {
                 "year": 2018,
-                "amount": 36500
+                "amount": 36426
             },
             {
                 "year": 2019,
-                "amount": 37500
+                "amount": 38000
             },
             {
                 "year": 2020,
-                "amount": 40000
+                "amount": 39834
             },
             {
                 "year": 2021,
@@ -134,39 +134,39 @@
         "city": "Atlanta",
         "data": [{
                 "year": 2012,
-                "amount": 36000
+                "amount": 35719
             },
             {
                 "year": 2013,
-                "amount": 36500
+                "amount": 35890
             },
             {
                 "year": 2014,
-                "amount": 35500
+                "amount": 35719
             },
             {
                 "year": 2015,
-                "amount": 36000
+                "amount": 37175
             },
             {
                 "year": 2016,
-                "amount": 39000
+                "amount": 38686
             },
             {
                 "year": 2017,
-                "amount": 41000
+                "amount": 40595
             },
             {
                 "year": 2018,
-                "amount": 44000
+                "amount": 43468
             },
             {
                 "year": 2019,
-                "amount": 47500
+                "amount": 47424
             },
             {
                 "year": 2020,
-                "amount": 50000
+                "amount": 50032
             },
             {
                 "year": 2021,
