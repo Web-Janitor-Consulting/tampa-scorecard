@@ -111,6 +111,10 @@ section {
     flex: 0 1 auto;
  }
 
+ .reverse {
+    flex-direction: row-reverse;
+ }
+
  .context {
     width: 450px;
     font-size: 1.4rem;
