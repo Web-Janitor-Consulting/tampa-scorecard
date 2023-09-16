@@ -163,7 +163,7 @@ table {
   }
 
   summary {
-    width: 100%;
+    width: 15%;
     background: var(--primary);
     color: var(--secondary);
     padding: 5px;
@@ -172,6 +172,10 @@ table {
     &:focus {
       border-color: black;
     }
+  }
+
+  summary:hover {
+    cursor: pointer;
   }
 
   
