@@ -119,6 +119,8 @@ section {
     width: 450px;
     font-size: 1.4rem;
     align-self: center;
+    display: flex;
+    flex-direction: column;
  }
 
  .graph {
@@ -134,3 +136,42 @@ section {
     }
 }
 
+/* https://css-tricks.com/responsive-data-tables/ */
+
+/* 
+Generic Styling, for Desktops/Laptops 
+*/
+table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    font-size: .8em;
+    table-layout:fixed;
+  }
+  /* Zebra striping */
+  tr:nth-of-type(odd) { 
+    background: #eee; 
+  }
+  th { 
+    background: #333; 
+    color: white; 
+    font-weight: bold; 
+  }
+  td, th { 
+    padding: .5em; 
+    border: 1px solid #ccc; 
+    text-align: center; 
+  }
+
+  summary {
+    width: 100%;
+    background: var(--primary);
+    color: var(--secondary);
+    padding: 5px;
+    border: 2px solid transparent;
+    outline: none;
+    &:focus {
+      border-color: black;
+    }
+  }
+
+  

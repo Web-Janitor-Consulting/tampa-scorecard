@@ -61,8 +61,14 @@
                     <p>Per Capita Income: Florida Cities Tampa has the third higehst per capita income of all major Florida cities.
                     </p>
 
+
                 </div>
                 <div class="graph">
+                    <details>
+                        <summary>Data Table</summary>
+                        {% fl-line pci %}
+                    </details>
+
                     <canvas id="pci"></canvas>
                 </div>
             </div>
@@ -71,6 +77,11 @@
                     <p>Tampa lags behind its benchmark cities.</p>
                 </div>
                 <div class="graph">
+                    <details>
+                        <summary>Data Table</summary>
+                        {% fl-line pci-benchmark %}
+                    </details>
+
                     <canvas id="pci-benchmark"></canvas>
                 </div>
 
