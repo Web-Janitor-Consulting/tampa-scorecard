@@ -211,7 +211,6 @@ fetch('high-earners.json')
     .then(response => response.json())
     .then(data => {
         const ctx = document.getElementById('high-earners');
-        console.log(data);
 
         new Chart(ctx, {
             type: 'bar',
@@ -221,13 +220,13 @@ fetch('high-earners.json')
                     label: 'Percent of Population Earning $200,000 or more 2021',
                     data: data.map(row => row.percentage),
                     backgroundColor: [
-                        'rgba(255, 99, 132, 0.2)',
-                        'rgba(255, 159, 64, 0.2)',
-                        'rgba(255, 205, 86, 0.2)',
-                        'rgba(75, 192, 192, 0.2)',
-                        'rgba(54, 162, 235, 0.2)',
-                        'rgba(153, 102, 255, 0.2)',
-                        'rgba(201, 203, 207, 0.2)'
+                        'rgba(255, 99, 132, 0.8)',
+                        'rgba(255, 159, 64, 0.8)',
+                        'rgba(255, 205, 86, 0.8)',
+                        'rgba(75, 192, 192, 0.8)',
+                        'rgba(54, 162, 235, 0.8)',
+                        'rgba(153, 102, 255, 0.8)',
+                        'rgba(201, 203, 207, 0.8)'
                     ],
                     borderColor: [
                         'rgb(255, 99, 132)',
@@ -248,11 +247,7 @@ fetch('high-earners.json')
                 },
             },
             options: {
-                scales: {
-                    y: {
-                        beginAtZero: true,
-                    }
-                }
+                indexAxis: 'y',
             }
         });
     })

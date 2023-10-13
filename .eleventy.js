@@ -4,6 +4,7 @@ const path = require('path');
 module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("./src/*.{css,jpg,json,svg}");
     eleventyConfig.addPassthroughCopy("./src/main.js");
+    eleventyConfig.addPassthroughCopy("./src/table-saw.js");
     eleventyConfig.addPassthroughCopy("./src/_data");
     eleventyConfig.addShortcode('fl-line', function(metric) {
         const tbody = [];
@@ -15,7 +16,9 @@ module.exports = function(eleventyConfig) {
             tbody.push(`<tr><td>${ city }</td>${ amounts }</tr>`);
         }
 
-        return `<table>
+        return `
+        <table-saw breakpoint="(max-width: 30em)" ratio="1/1" zero-padding>
+        <table>
       <thead>
         <tr>
           <th>City</th>
@@ -34,7 +37,8 @@ module.exports = function(eleventyConfig) {
       <tbody>
         ${tbody.join("\n")}
       </tbody>
-    </table>`;
+    </table>
+    </table-saw>`;
 
     });
 

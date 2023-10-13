@@ -136,17 +136,7 @@ section {
     }
 }
 
-/* https://css-tricks.com/responsive-data-tables/ */
 
-/* 
-Generic Styling, for Desktops/Laptops 
-*/
-table { 
-    width: 100%; 
-    border-collapse: collapse; 
-    font-size: .8em;
-    table-layout:fixed;
-  }
   /* Zebra striping */
   tr:nth-of-type(odd) { 
     background: #eee; 
@@ -158,7 +148,7 @@ table {
   }
   td, th { 
     padding: .5em; 
-    border: 1px solid #ccc; 
+
     text-align: center; 
   }
 
