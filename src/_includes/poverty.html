@@ -1,0 +1,49 @@
+<section id="poverty">
+    <h2>Poverty</h2>
+    <p class="quiet">
+        Census Bureau uses a set of money income thresholds that vary by family size and composition to determine who is in poverty. If a family's total income is less than the family's threshold, then that family and every individual in it is considered in poverty.
+        The official poverty thresholds do not vary geographically, but they are updated for inflation using the Consumer Price Index (CPI-U). The official poverty definition uses money income before taxes and does not include capital gains or noncash
+        benefits (such as public housing, Medicaid, and food stamps). <a href="https://www.census.gov/topics/income-poverty/poverty/guidance/poverty-measures.html">Source</a>
+    </p>
+    <div class="wrapper">
+        <div class="context">
+            <p>
+                Middle Class: Florida Cities<br> Tampa's middle class is the second smallest from all major Florida cities.
+            </p>
+        </div>
+        <div class="graph">
+            <details>
+                <summary>Data Table</summary>
+                {% data-line middle %}
+            </details>
+            <canvas id="middle"></canvas>
+        </div>
+    </div>
+    <div class="wrapper reverse">
+        <div class="context">
+            <p>
+                Poverty Rate: Florida Cities<br> Tampa has the second highest poverty rate from all major Florida cities.
+            </p>
+        </div>
+        <div class="graph">
+            <details>
+                <summary>Data Table</summary>
+                {% data-line poverty %}
+            </details>
+            <canvas id="poverty-rate"></canvas>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="context">
+            <p>
+                Poverty Rate: Benchmark Cities<br> Tampa has the second highest poverty rate from all benchmark cities.
+            </p>
+        </div>
+        <div class="graph">
+            <details>
+                <summary>Data Table</summary>
+                {% data-bar poverty-benchmark-21 %}
+            </details>
+            <canvas id="poverty-benchmark"></canvas>
+        </div>
+</section>

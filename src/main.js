@@ -421,3 +421,105 @@ fetch('_data/pci-disparity-race-21.json')
     .catch(error => {
         console.error('Error loading data:', error);
     });
+
+fetch('_data/middle.json')
+    .then(response => response.json())
+    .then(data => {
+        const datasets = [];
+
+        for (let i = 0; i < data.length; i++) {
+            const cityData = data[i].data;
+            const cityName = data[i].city;
+
+            datasets.push({
+                label: cityName,
+                data: cityData.map(row => row.amount),
+                borderWidth: 1
+            });
+        }
+
+        const ctx = document.getElementById('middle');
+
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: data[0].data.map(row => row.year),
+                datasets: datasets
+            },
+            plugins: {
+                deferred: {
+                    yOffset: '75%',
+                    delay: 500
+                },
+            },
+            options: {}
+        });
+    })
+    .catch(error => {
+        console.error('Error loading data:', error);
+    });
+fetch('_data/poverty.json')
+    .then(response => response.json())
+    .then(data => {
+        const datasets = [];
+
+        for (let i = 0; i < data.length; i++) {
+            const cityData = data[i].data;
+            const cityName = data[i].city;
+
+            datasets.push({
+                label: cityName,
+                data: cityData.map(row => row.amount),
+                borderWidth: 1
+            });
+        }
+
+        const ctx = document.getElementById('poverty-rate');
+
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: data[0].data.map(row => row.year),
+                datasets: datasets
+            },
+            plugins: {
+                deferred: {
+                    yOffset: '75%',
+                    delay: 500
+                },
+            },
+            options: {}
+        });
+    })
+    .catch(error => {
+        console.error('Error loading data:', error);
+    });
+
+fetch('_data/poverty-benchmark-21.json')
+    .then(response => response.json())
+    .then(data => {
+        const ctx = document.getElementById('poverty-benchmark');
+
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: data.map(row => row.city),
+                datasets: [{
+                    label: 'Percent Living in Poverty 2021',
+                    data: data.map(row => row.percentage),
+                }]
+            },
+            plugins: {
+                deferred: {
+                    yOffset: '100%',
+                    delay: 3000
+                },
+            },
+            options: {
+                indexAxis: 'x',
+            }
+        });
+    })
+    .catch(error => {
+        console.error('Error loading data:', error);
+    });
