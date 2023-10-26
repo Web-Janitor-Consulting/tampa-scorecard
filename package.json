@@ -1,6 +1,6 @@
 {
   "name": "tampa-scorecard",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "an Eleventy site for the Tampa Scorecard",
   "main": "index.js",
   "scripts": {
