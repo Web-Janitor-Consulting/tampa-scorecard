@@ -6,7 +6,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("./src/main.js");
     eleventyConfig.addPassthroughCopy("./src/table-saw.js");
     eleventyConfig.addPassthroughCopy("./src/_data");
-    eleventyConfig.addShortcode('fl-line', function(metric) {
+    eleventyConfig.addShortcode('data-line', function(metric) {
         const tbody = [];
         for (const { city, data }
             of metric) {
@@ -39,6 +39,30 @@ module.exports = function(eleventyConfig) {
       </tbody>
     </table>
     </table-saw>`;
+
+    });
+
+    eleventyConfig.addShortcode('data-bar', function(metric) {
+        const tbody = [];
+        for (const { city, percentage }
+            of metric) {
+            tbody.push(`<tr><td>${ city }</td><td>${ percentage }</td></tr>`);
+        }
+
+        return `
+      <table-saw breakpoint="(max-width: 30em)" ratio="1/1" zero-padding>
+      <table>
+    <thead>
+      <tr>
+        <th>City</th>
+        <th>Percentage</th>
+      </tr>
+    </thead>
+    <tbody>
+      ${tbody.join("\n")}
+    </tbody>
+  </table>
+  </table-saw>`;
 
     });
 

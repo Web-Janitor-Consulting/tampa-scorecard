@@ -207,7 +207,7 @@ fetch('_data/pci-benchmark.json')
         console.error('Error loading data:', error);
     });
 
-fetch('high-earners.json')
+fetch('_data/high-earners.json')
     .then(response => response.json())
     .then(data => {
         const ctx = document.getElementById('high-earners');
