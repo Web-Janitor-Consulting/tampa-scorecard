@@ -52,55 +52,7 @@
                 <li><a href="#education">Educational Attainment</a></li>
             </ul>
         </section>
-        <section id="per-capita-income">
-            <h2>Per Capita Income</h2>
-            <p class="quiet">
-                Per capita income is a measure of the amount of money earned per person in a given area. It is calculated by dividing the area's total income by its total population.
-            </p>
-            <div class="wrapper">
-                <div class="context">
-                    <p>Per Capita Income: Florida Cities Tampa has the third higehst per capita income of all major Florida cities.
-                    </p>
-
-
-                </div>
-                <div class="graph">
-                    <details>
-                        <summary>Data Table</summary>
-                        {% data-line pci %}
-                    </details>
-
-                    <canvas id="pci"></canvas>
-                </div>
-            </div>
-            <div class="wrapper reverse">
-                <div class="context">
-                    <p>Tampa lags behind its benchmark cities.</p>
-                </div>
-                <div class="graph">
-                    <details>
-                        <summary>Data Table</summary>
-                        {% data-line pci-benchmark %}
-                    </details>
-
-                    <canvas id="pci-benchmark"></canvas>
-                </div>
-
-            </div>
-            <div class="wrapper">
-                <div class="context">
-                    <p>Tampa's high-income earners skew the average.</p>
-                </div>
-                <div class="graph">
-                    <details>
-                        <summary>Data Table</summary>
-                        {% data-bar high-earners %}
-                    </details>
-                    <canvas id="high-earners"></canvas>
-                </div>
-
-            </div>
-        </section>
+        {% include "per-capita-income.html" %} {% include "median-income.html" %}
     </div>
 </body>
 

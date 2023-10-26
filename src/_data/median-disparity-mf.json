@@ -1,0 +1,265 @@
+[{
+        "city": "Fort Lauderdale",
+        "data": [{
+                "year": 2012,
+                "amount": 8444
+            },
+            {
+                "year": 2013,
+                "amount": 7314
+            },
+            {
+                "year": 2014,
+                "amount": 6679
+            },
+            {
+                "year": 2015,
+                "amount": 6679
+            },
+            {
+                "year": 2016,
+                "amount": 5829
+            },
+            {
+                "year": 2017,
+                "amount": 8820
+            },
+            {
+                "year": 2018,
+                "amount": 8936
+            },
+            {
+                "year": 2019,
+                "amount": 10401
+            },
+            {
+                "year": 2020,
+                "amount": 9084
+            },
+            {
+                "year": 2021,
+                "amount": 10216
+            }
+        ]
+    },
+    {
+        "city": "Jacksonville",
+        "data": [{
+                "year": 2012,
+                "amount": 6934
+            },
+            {
+                "year": 2013,
+                "amount": 7063
+            },
+            {
+                "year": 2014,
+                "amount": 5907
+            },
+            {
+                "year": 2015,
+                "amount": 5907
+            },
+            {
+                "year": 2016,
+                "amount": 5713
+            },
+            {
+                "year": 2017,
+                "amount": 6199
+            },
+            {
+                "year": 2018,
+                "amount": 6220
+            },
+            {
+                "year": 2019,
+                "amount": 6455
+            },
+            {
+                "year": 2020,
+                "amount": 5716
+            },
+            {
+                "year": 2021,
+                "amount": 7479
+            }
+        ]
+    },
+    {
+        "city": "Miami",
+        "data": [{
+                "year": 2012,
+                "amount": 4142
+            },
+            {
+                "year": 2013,
+                "amount": 3852
+            },
+            {
+                "year": 2014,
+                "amount": 4299
+            },
+            {
+                "year": 2015,
+                "amount": 4299
+            },
+            {
+                "year": 2016,
+                "amount": 4425
+            },
+            {
+                "year": 2017,
+                "amount": 4247
+            },
+            {
+                "year": 2018,
+                "amount": 4316
+            },
+            {
+                "year": 2019,
+                "amount": 4813
+            },
+            {
+                "year": 2020,
+                "amount": 4820
+            },
+            {
+                "year": 2021,
+                "amount": 5359
+            }
+        ]
+    },
+    {
+        "city": "Orlando",
+        "data": [{
+                "year": 2012,
+                "amount": 6639
+            },
+            {
+                "year": 2013,
+                "amount": 4204
+            },
+            {
+                "year": 2014,
+                "amount": 3469
+            },
+            {
+                "year": 2015,
+                "amount": 3469
+            },
+            {
+                "year": 2016,
+                "amount": 4301
+            },
+            {
+                "year": 2017,
+                "amount": 4349
+            },
+            {
+                "year": 2018,
+                "amount": 5072
+            },
+            {
+                "year": 2019,
+                "amount": 5491
+            },
+            {
+                "year": 2020,
+                "amount": 7593
+            },
+            {
+                "year": 2021,
+                "amount": 9767
+            }
+        ]
+    },
+    {
+        "city": "St. Petersburg",
+        "data": [{
+                "year": 2012,
+                "amount": 6152
+            },
+            {
+                "year": 2013,
+                "amount": 5271
+            },
+            {
+                "year": 2014,
+                "amount": 4926
+            },
+            {
+                "year": 2015,
+                "amount": 4926
+            },
+            {
+                "year": 2016,
+                "amount": 4291
+            },
+            {
+                "year": 2017,
+                "amount": 3881
+            },
+            {
+                "year": 2018,
+                "amount": 5151
+            },
+            {
+                "year": 2019,
+                "amount": 4919
+            },
+            {
+                "year": 2020,
+                "amount": 5361
+            },
+            {
+                "year": 2021,
+                "amount": 6783
+            }
+        ]
+    },
+    {
+        "city": "Tampa",
+        "data": [{
+                "year": 2012,
+                "amount": 9749
+            },
+            {
+                "year": 2013,
+                "amount": 9857
+            },
+            {
+                "year": 2014,
+                "amount": 9914
+            },
+            {
+                "year": 2015,
+                "amount": 9914
+            },
+            {
+                "year": 2016,
+                "amount": 10427
+            },
+            {
+                "year": 2017,
+                "amount": 9249
+            },
+            {
+                "year": 2018,
+                "amount": 9154
+            },
+            {
+                "year": 2019,
+                "amount": 9296
+            },
+            {
+                "year": 2020,
+                "amount": 7393
+            },
+            {
+                "year": 2021,
+                "amount": 9289
+            }
+        ]
+    }
+]

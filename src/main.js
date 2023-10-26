@@ -149,13 +149,7 @@ fetch('_data/pci.json')
                 },
             },
             options: {
-                scales: {
-                    yAxes: [{
-                        ticks: {
-                            beginAtZero: true
-                        }
-                    }]
-                }
+
             }
         });
     })
@@ -193,13 +187,7 @@ fetch('_data/pci-benchmark.json')
                 },
             },
             options: {
-                scales: {
-                    yAxes: [{
-                        ticks: {
-                            beginAtZero: true
-                        }
-                    }]
-                }
+
             }
         });
     })
@@ -219,25 +207,204 @@ fetch('_data/high-earners.json')
                 datasets: [{
                     label: 'Percent of Population Earning $200,000 or more 2021',
                     data: data.map(row => row.percentage),
-                    backgroundColor: [
-                        'rgba(255, 99, 132, 0.8)',
-                        'rgba(255, 159, 64, 0.8)',
-                        'rgba(255, 205, 86, 0.8)',
-                        'rgba(75, 192, 192, 0.8)',
-                        'rgba(54, 162, 235, 0.8)',
-                        'rgba(153, 102, 255, 0.8)',
-                        'rgba(201, 203, 207, 0.8)'
-                    ],
-                    borderColor: [
-                        'rgb(255, 99, 132)',
-                        'rgb(255, 159, 64)',
-                        'rgb(255, 205, 86)',
-                        'rgb(75, 192, 192)',
-                        'rgb(54, 162, 235)',
-                        'rgb(153, 102, 255)',
-                        'rgb(201, 203, 207)'
-                    ],
-                    borderWidth: 1
+                }]
+            },
+            plugins: {
+                deferred: {
+                    yOffset: '100%',
+                    delay: 3000
+                },
+            },
+            options: {
+                indexAxis: 'y',
+            }
+        });
+    })
+    .catch(error => {
+        console.error('Error loading data:', error);
+    });
+
+fetch('_data/median-income.json')
+    .then(response => response.json())
+    .then(data => {
+        const datasets = [];
+
+        for (let i = 0; i < data.length; i++) {
+            const cityData = data[i].data;
+            const cityName = data[i].city;
+
+            datasets.push({
+                label: cityName,
+                data: cityData.map(row => row.amount),
+                borderWidth: 1
+            });
+        }
+
+        const ctx = document.getElementById('med-income');
+
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: data[0].data.map(row => row.year),
+                datasets: datasets
+            },
+            plugins: {
+                deferred: {
+                    yOffset: '75%',
+                    delay: 500
+                },
+            },
+            options: {}
+        });
+    })
+    .catch(error => {
+        console.error('Error loading data:', error);
+    });
+
+fetch('_data/median-benchmark-21.json')
+    .then(response => response.json())
+    .then(data => {
+        const ctx = document.getElementById('med-benchmark');
+
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: data.map(row => row.city),
+                datasets: [{
+                    label: 'Median Income Benchmark Cities 2021',
+                    data: data.map(row => row.percentage),
+                }]
+            },
+            plugins: {
+                deferred: {
+                    yOffset: '100%',
+                    delay: 3000
+                },
+            },
+            options: {
+                indexAxis: 'x',
+            }
+        });
+    })
+    .catch(error => {
+        console.error('Error loading data:', error);
+    });
+
+fetch('_data/median-disparity-mf.json')
+    .then(response => response.json())
+    .then(data => {
+        const datasets = [];
+
+        for (let i = 0; i < data.length; i++) {
+            const cityData = data[i].data;
+            const cityName = data[i].city;
+
+            datasets.push({
+                label: cityName,
+                data: cityData.map(row => row.amount),
+                borderWidth: 1
+            });
+        }
+
+        const ctx = document.getElementById('med-disparity-mf');
+
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: data[0].data.map(row => row.year),
+                datasets: datasets
+            },
+            plugins: {
+                deferred: {
+                    yOffset: '75%',
+                    delay: 500
+                },
+            },
+            options: {}
+        });
+    })
+    .catch(error => {
+        console.error('Error loading data:', error);
+    });
+
+fetch('_data/median-disparity-mf-21.json')
+    .then(response => response.json())
+    .then(data => {
+        const ctx = document.getElementById('med-disparity-mf-21');
+
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: data.map(row => row.city),
+                datasets: [{
+                    label: 'Median Income Disparity Between Average Male & Female Full Time Workers 2021',
+                    data: data.map(row => row.percentage),
+                }]
+            },
+            plugins: {
+                deferred: {
+                    yOffset: '100%',
+                    delay: 3000
+                },
+            },
+            options: {
+                indexAxis: 'y',
+            }
+        });
+    })
+    .catch(error => {
+        console.error('Error loading data:', error);
+    });
+
+fetch('_data/pci-disparity-race.json')
+    .then(response => response.json())
+    .then(data => {
+        const datasets = [];
+
+        for (let i = 0; i < data.length; i++) {
+            const cityData = data[i].data;
+            const cityName = data[i].city;
+
+            datasets.push({
+                label: cityName,
+                data: cityData.map(row => row.amount),
+                borderWidth: 1
+            });
+        }
+
+        const ctx = document.getElementById('pci-disparity-race');
+
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: data[0].data.map(row => row.year),
+                datasets: datasets
+            },
+            plugins: {
+                deferred: {
+                    yOffset: '75%',
+                    delay: 500
+                },
+            },
+            options: {}
+        });
+    })
+    .catch(error => {
+        console.error('Error loading data:', error);
+    });
+
+fetch('_data/pci-disparity-race-21.json')
+    .then(response => response.json())
+    .then(data => {
+        const ctx = document.getElementById('pci-disparity-race-21');
+
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: data.map(row => row.city),
+                datasets: [{
+                    label: 'Per Capita Income Disparity Between African Americans and Caucasians 2021',
+                    data: data.map(row => row.percentage),
                 }]
             },
             plugins: {

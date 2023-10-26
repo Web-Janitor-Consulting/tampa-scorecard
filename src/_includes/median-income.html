@@ -1,0 +1,65 @@
+<section id="median-income">
+    <h2>Median Income</h2>
+    <p class="quiet">
+        Median income is the amount which divides the income distribution into two equal groups, half having income above that amount, and half having income below that amount. Mean income (average) is the amount obtained by dividing the total aggregate income
+        of a group by the number of units in that group. The means and medians for households and families are based on all households and families. Means and medians for people are based on people 15 years old and over with income.
+    </p>
+    <div class="wrapper">
+        <div class="context">
+            <p>Median Income: Florida Cities<br> Tampa has the third higehst median income of all major Florida cities.
+            </p>
+
+
+        </div>
+        <div class="graph">
+            <details>
+                <summary>Data Table</summary>
+                {% data-line median-income %}
+            </details>
+
+            <canvas id="med-income"></canvas>
+        </div>
+    </div>
+    <div class="wrapper reverse">
+        <div class="context">
+            <p>Tampa lags behind its benchmark cities.</p>
+        </div>
+        <div class="graph">
+            <details>
+                <summary>Data Table</summary>
+                {% data-bar median-benchmark-21 %}
+            </details>
+
+            <canvas id="med-benchmark"></canvas>
+        </div>
+
+    </div>
+    <div class="wrapper">
+        <div class="context">
+            Gender Inequality: Florida Cities<br> Tampa is the third most unequal city in Florida.
+        </div>
+        <div class="graph">
+            <details>
+                <summary>Data Table</summary>
+                {% data-line median-disparity-mf %}
+            </details>
+
+            <canvas id="med-disparity-mf"></canvas>
+        </div>
+
+    </div>
+    <div class="wrapper reverse">
+        <div class="context">
+            Gender Inequality: Florida Cities 2021<br> Tampa is the third most unequal city in Florida.
+        </div>
+        <div class="graph">
+            <details>
+                <summary>Data Table</summary>
+                {% data-bar median-disparity-mf-21 %}
+            </details>
+
+            <canvas id="med-disparity-mf-21"></canvas>
+        </div>
+
+    </div>
+</section>

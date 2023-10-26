@@ -1,0 +1,25 @@
+[{
+        "city": "Tampa",
+        "percentage": "9289"
+    },
+    {
+        "city": "Orlando",
+        "percentage": "9767"
+    },
+    {
+        "city": "Miami",
+        "percentage": "5359"
+    },
+    {
+        "city": "Jacksonville",
+        "percentage": "7479"
+    },
+    {
+        "city": "Fort Lauderdale",
+        "percentage": "10216"
+    },
+    {
+        "city": "St. Petersburg",
+        "percentage": "6783"
+    }
+]
