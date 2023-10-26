@@ -1,0 +1,36 @@
+<section id="education">
+    <h2>Education</h2>
+    <div class="wrapper">
+        <div class="context">
+            <p>
+                Educational Attainment: Florida Cities<br>
+                Tampa is the most educated major Florida city.
+            </p>
+        </div>
+        <div class="graph">
+            <details>
+                <summary>Data Table</summary>
+                {% data-bar education %}
+            </details>
+
+            <canvas id="education-state"></canvas>
+        </div>
+    </div>
+    <div class="wrapper reverse">
+        <div class="context">
+            <p>
+                Educational Attainment: Benchmark Cities<br>
+                Tampa is less educated thank its benchmark cities.
+            </p>
+        </div>
+        <div class="graph">
+            <details>
+                <summary>Data Table</summary>
+                {% data-bar education-benchmark %}
+            </details>
+
+            <canvas id="education-benchmark"></canvas>
+        </div>
+    </div>
+
+</section>

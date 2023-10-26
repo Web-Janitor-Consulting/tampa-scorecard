@@ -523,3 +523,164 @@ fetch('_data/poverty-benchmark-21.json')
     .catch(error => {
         console.error('Error loading data:', error);
     });
+
+fetch('_data/unemployment.json')
+    .then(response => response.json())
+    .then(data => {
+        const datasets = [];
+
+        for (let i = 0; i < data.length; i++) {
+            const cityData = data[i].data;
+            const cityName = data[i].city;
+
+            datasets.push({
+                label: cityName,
+                data: cityData.map(row => row.amount),
+                borderWidth: 1
+            });
+        }
+
+        const ctx = document.getElementById('unemployment-rate');
+
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: data[0].data.map(row => row.year),
+                datasets: datasets
+            },
+            plugins: {
+                deferred: {
+                    yOffset: '75%',
+                    delay: 500
+                },
+            },
+            options: {}
+        });
+    })
+    .catch(error => {
+        console.error('Error loading data:', error);
+    });
+
+fetch('_data/homeownership.json')
+    .then(response => response.json())
+    .then(data => {
+        const datasets = [];
+
+        for (let i = 0; i < data.length; i++) {
+            const cityData = data[i].data;
+            const cityName = data[i].city;
+
+            datasets.push({
+                label: cityName,
+                data: cityData.map(row => row.amount),
+                borderWidth: 1
+            });
+        }
+
+        const ctx = document.getElementById('homeownership-rate');
+
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: data[0].data.map(row => row.year),
+                datasets: datasets
+            },
+            plugins: {
+                deferred: {
+                    yOffset: '75%',
+                    delay: 500
+                },
+            },
+            options: {}
+        });
+    })
+    .catch(error => {
+        console.error('Error loading data:', error);
+    });
+
+fetch('_data/violent-crime.json')
+    .then(response => response.json())
+    .then(data => {
+        const ctx = document.getElementById('violent-crime-rate');
+
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: data.map(row => row.city),
+                datasets: [{
+                    label: 'Violent Crime per 100k Population 2021',
+                    data: data.map(row => row.percentage),
+                }]
+            },
+            plugins: {
+                deferred: {
+                    yOffset: '100%',
+                    delay: 3000
+                },
+            },
+            options: {
+                indexAxis: 'y',
+            }
+        });
+    })
+    .catch(error => {
+        console.error('Error loading data:', error);
+    });
+
+fetch('_data/education.json')
+    .then(response => response.json())
+    .then(data => {
+        const ctx = document.getElementById('education-state');
+
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: data.map(row => row.city),
+                datasets: [{
+                    label: 'Percent with bachelors degree 2021',
+                    data: data.map(row => row.percentage),
+                }]
+            },
+            plugins: {
+                deferred: {
+                    yOffset: '100%',
+                    delay: 3000
+                },
+            },
+            options: {
+                indexAxis: 'y',
+            }
+        });
+    })
+    .catch(error => {
+        console.error('Error loading data:', error);
+    });
+
+fetch('_data/education-benchmark.json')
+    .then(response => response.json())
+    .then(data => {
+        const ctx = document.getElementById('education-benchmark');
+
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: data.map(row => row.city),
+                datasets: [{
+                    label: 'Percent with bachelors degree 2021',
+                    data: data.map(row => row.percentage),
+                }]
+            },
+            plugins: {
+                deferred: {
+                    yOffset: '100%',
+                    delay: 3000
+                },
+            },
+            options: {
+                indexAxis: 'x',
+            }
+        });
+    })
+    .catch(error => {
+        console.error('Error loading data:', error);
+    });

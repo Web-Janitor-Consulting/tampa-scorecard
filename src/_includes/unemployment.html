@@ -1,0 +1,22 @@
+<section id="unemployment">
+    <h2>Unemployment</h2>
+    <p class="quiet">
+        All people who were not employed during the reference week but were available for work (excluding temporary illness) and had made specific efforts to find employment some time during the 4-week period ending with the reference week are classified as unemployed.
+        Individuals who were waiting to be recalled to a job from which they had been laid off need not have been looking for work to be classified as unemployed. People waiting to start a new job must have actively looked for a job within the last 4
+        weeks in order to be counted as unemployed. Otherwise, they are classified as not in the labor force. <a href="https://www.census.gov/programs-surveys/cps/technical-documentation/subject-definitions.html#unemployedpeople">Source</a>
+    </p>
+    <div class="wrapper">
+        <div class="context">
+            <p>
+                Unemployment Rate: Florida Cities<br> Tampa has the third lowest unemployment rate of Florida's largest cities. (Tied with Miami)
+            </p>
+        </div>
+        <div class="graph">
+            <details>
+                <summary>Data Table</summary>
+                {% data-line unemployment %}
+            </details>
+            <canvas id="unemployment-rate"></canvas>
+        </div>
+    </div>
+</section>
