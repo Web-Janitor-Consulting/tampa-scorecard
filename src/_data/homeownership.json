@@ -2,43 +2,43 @@
         "city": "Fort Lauderdale",
         "data": [{
                 "year": 2012,
-                "amount": 0.548
+                "amount": 54.8
             },
             {
                 "year": 2013,
-                "amount": 0.543
+                "amount": 54.3
             },
             {
                 "year": 2014,
-                "amount": 0.529
+                "amount": 52.9
             },
             {
                 "year": 2015,
-                "amount": 0.529
+                "amount": 52.9
             },
             {
                 "year": 2016,
-                "amount": 0.526
+                "amount": 52.6
             },
             {
                 "year": 2017,
-                "amount": 0.524
+                "amount": 52.4
             },
             {
                 "year": 2018,
-                "amount": 0.531
+                "amount": 53.1
             },
             {
                 "year": 2019,
-                "amount": 0.527
+                "amount": 52.7
             },
             {
                 "year": 2020,
-                "amount": 0.539
+                "amount": 53.9
             },
             {
                 "year": 2021,
-                "amount": 0.544
+                "amount": 54.4
             }
         ]
     },
@@ -46,43 +46,43 @@
         "city": "Jacksonville ",
         "data": [{
                 "year": 2012,
-                "amount": 0.624
+                "amount": 62.4
             },
             {
                 "year": 2013,
-                "amount": 0.616
+                "amount": 61.6
             },
             {
                 "year": 2014,
-                "amount": 0.603
+                "amount": 60.3
             },
             {
                 "year": 2015,
-                "amount": 0.603
+                "amount": 60.3
             },
             {
                 "year": 2016,
-                "amount": 0.579
+                "amount": 57.9
             },
             {
                 "year": 2017,
-                "amount": 0.571
+                "amount": 57.1
             },
             {
                 "year": 2018,
-                "amount": 0.56
+                "amount": 56
             },
             {
                 "year": 2019,
-                "amount": 0.56
+                "amount": 56
             },
             {
                 "year": 2020,
-                "amount": 0.564
+                "amount": 56.4
             },
             {
                 "year": 2021,
-                "amount": 0.566
+                "amount": 56.6
             }
         ]
     },
@@ -90,43 +90,43 @@
         "city": "Miami",
         "data": [{
                 "year": 2012,
-                "amount": 0.338
+                "amount": 33.8
             },
             {
                 "year": 2013,
-                "amount": 0.328
+                "amount": 32.8
             },
             {
                 "year": 2014,
-                "amount": 0.316
+                "amount": 31.6
             },
             {
                 "year": 2015,
-                "amount": 0.316
+                "amount": 31.6
             },
             {
                 "year": 2016,
-                "amount": 0.305
+                "amount": 30.5
             },
             {
                 "year": 2017,
-                "amount": 0.302
+                "amount": 30.2
             },
             {
                 "year": 2018,
-                "amount": 0.298
+                "amount": 29.8
             },
             {
                 "year": 2019,
-                "amount": 0.296
+                "amount": 29.6
             },
             {
                 "year": 2020,
-                "amount": 0.304
+                "amount": 30.4
             },
             {
                 "year": 2021,
-                "amount": 0.3
+                "amount": 30
             }
         ]
     },
@@ -134,43 +134,43 @@
         "city": "Orlando",
         "data": [{
                 "year": 2012,
-                "amount": 0.396
+                "amount": 39.6
             },
             {
                 "year": 2013,
-                "amount": 0.39
+                "amount": 39
             },
             {
                 "year": 2014,
-                "amount": 0.374
+                "amount": 37.4
             },
             {
                 "year": 2015,
-                "amount": 0.374
+                "amount": 37.4
             },
             {
                 "year": 2016,
-                "amount": 0.355
+                "amount": 35.5
             },
             {
                 "year": 2017,
-                "amount": 0.35
+                "amount": 35
             },
             {
                 "year": 2018,
-                "amount": 0.351
+                "amount": 35.1
             },
             {
                 "year": 2019,
-                "amount": 0.354
+                "amount": 35.4
             },
             {
                 "year": 2020,
-                "amount": 0.373
+                "amount": 37.3
             },
             {
                 "year": 2021,
-                "amount": 0.382
+                "amount": 38.2
             }
         ]
     },
@@ -178,43 +178,43 @@
         "city": "St. Petersburg",
         "data": [{
                 "year": 2012,
-                "amount": 0.616
+                "amount": 61.6
             },
             {
                 "year": 2013,
-                "amount": 0.605
+                "amount": 60.5
             },
             {
                 "year": 2014,
-                "amount": 0.587
+                "amount": 58.7
             },
             {
                 "year": 2015,
-                "amount": 0.587
+                "amount": 58.7
             },
             {
                 "year": 2016,
-                "amount": 0.577
+                "amount": 57.7
             },
             {
                 "year": 2017,
-                "amount": 0.581
+                "amount": 58.1
             },
             {
                 "year": 2018,
-                "amount": 0.588
+                "amount": 58.8
             },
             {
                 "year": 2019,
-                "amount": 0.604
+                "amount": 60.4
             },
             {
                 "year": 2020,
-                "amount": 0.624
+                "amount": 62.4
             },
             {
                 "year": 2021,
-                "amount": 0.627
+                "amount": 62.7
             }
         ]
     },
@@ -222,43 +222,43 @@
         "city": "Tampa",
         "data": [{
                 "year": 2012,
-                "amount": 0.517
+                "amount": 51.7
             },
             {
                 "year": 2013,
-                "amount": 0.509
+                "amount": 50.9
             },
             {
                 "year": 2014,
-                "amount": 0.496
+                "amount": 49.6
             },
             {
                 "year": 2015,
-                "amount": 0.496
+                "amount": 49.6
             },
             {
                 "year": 2016,
-                "amount": 0.484
+                "amount": 48.4
             },
             {
                 "year": 2017,
-                "amount": 0.483
+                "amount": 48.3
             },
             {
                 "year": 2018,
-                "amount": 0.478
+                "amount": 47.8
             },
             {
                 "year": 2019,
-                "amount": 0.486
+                "amount": 48.6
             },
             {
                 "year": 2020,
-                "amount": 0.493
+                "amount": 49.3
             },
             {
                 "year": 2021,
-                "amount": 0.5
+                "amount": 50
             }
         ]
     }
