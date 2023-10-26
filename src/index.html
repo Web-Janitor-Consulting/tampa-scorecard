@@ -67,7 +67,7 @@
                 <div class="graph">
                     <details>
                         <summary>Data Table</summary>
-                        {% fl-line pci %}
+                        {% data-line pci %}
                     </details>
 
                     <canvas id="pci"></canvas>
@@ -80,7 +80,7 @@
                 <div class="graph">
                     <details>
                         <summary>Data Table</summary>
-                        {% fl-line pci-benchmark %}
+                        {% data-line pci-benchmark %}
                     </details>
 
                     <canvas id="pci-benchmark"></canvas>
@@ -92,6 +92,10 @@
                     <p>Tampa's high-income earners skew the average.</p>
                 </div>
                 <div class="graph">
+                    <details>
+                        <summary>Data Table</summary>
+                        {% data-bar high-earners %}
+                    </details>
                     <canvas id="high-earners"></canvas>
                 </div>
 
